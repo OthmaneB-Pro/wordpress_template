@@ -1,0 +1,40 @@
+# =====================================================================
+# Local by Flywheel / WordPress
+# Par défaut on ignore TOUT à la racine, puis on ne réintègre que :
+#   - le code du thème  (app/.../themes/adnmetal)
+#   - l'export statique (static/) déployé sur Vercel
+#   - les fichiers de config du dépôt
+# Cela évite de versionner le cœur de WordPress, wp-config.php (identifiants
+# de base de données), le dump SQL, les logs et les uploads.
+# =====================================================================
+
+/*
+
+# Fichiers du dépôt à conserver
+!.gitignore
+!README.md
+!vercel.json
+!couvreur.png
+
+# Export statique pour Vercel
+!static/
+
+# Code du thème uniquement (on rouvre chaque niveau de dossier)
+!app/
+app/*
+!app/public/
+app/public/*
+!app/public/wp-content/
+app/public/wp-content/*
+!app/public/wp-content/themes/
+app/public/wp-content/themes/*
+!app/public/wp-content/themes/adnmetal/
+
+# Garde-fous de sécurité (jamais versionner, même si réintégré par erreur)
+**/wp-config.php
+*.log
+*.sql
+.DS_Store
+
+# Dépendances éventuelles du thème
+**/node_modules/

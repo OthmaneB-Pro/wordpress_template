@@ -1,0 +1,18 @@
+/*
+Theme Name: Ets Gurhem — Couvreur
+Theme URI: https://ets-gurhem.fr
+Author: Ets Gurhem — Couvreur
+Author URI: https://ets-gurhem.fr
+Description: Thème WordPress sur mesure pour Ets Gurhem, artisan couvreur-zingueur à Verneuil-en-Halatte (60550). Direction artistique « Tuile & Crème » : fond crème chaleureux, accents terre cuite, détails ardoise, animations élégantes et performantes. Spécialités : couverture, rénovation de toiture, zinguerie, gouttières, démoussage, traitement hydrofuge, fenêtres de toit, ravalement de façade.
+Version: 2.0.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: adnmetal
+Tags: artisan, couvreur, couverture, toiture, zinguerie, portfolio, business, custom-menu, featured-images, translation-ready
+*/
+
+/* The full design system lives in assets/css/main.css (enqueued from functions.php).
+   This file is required by WordPress for the theme header above. */
